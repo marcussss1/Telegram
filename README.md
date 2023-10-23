@@ -232,7 +232,7 @@
 
 ## 7. Алгоритмы <a name="7"></a>
 
-<img alt="physical schema" src="https://github.com/marcussss1/Telegram/blob/main/images/algorithms.png">
+<img alt="physical schema" src="https://github.com/marcussss1/Telegram/blob/main/images/algorithms.jpg">
 
 ## Список литературы
 [^1]: [Аудитория телеграма по миру](https://www.bankmycell.com/blog/number-of-telegram-users)
