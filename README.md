@@ -224,7 +224,7 @@
 
 ## 5. Логическая схема БД <a name="5"></a>
 
-<img alt="database logic diagram" src="https://github.com/marcussss1/Telegram/blob/main/images/logic.jph">
+<img alt="database logic diagram" src="https://github.com/marcussss1/Telegram/blob/main/images/logic.jpg">
 
 ## 6. Физическая схема <a name="6"></a>
 
