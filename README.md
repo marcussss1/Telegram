@@ -324,6 +324,11 @@ Message {
 
 <img alt="algorithms" src="https://github.com/marcussss1/Telegram/blob/main/images/algorithm_schema.jpg">
 
+### Чат для группы
+
+<img alt="algorithms" src="https://github.com/marcussss1/Telegram/blob/main/images/4.jpg">
+
+
 ## 8. Технологии <a name="8"></a>
 
 | Технология| Область применения | Мотивационная часть |
