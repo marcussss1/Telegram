@@ -322,7 +322,7 @@ Message {
 
 9) В Messages-service приходит сообщение из Centrifugo, которое он отдает клиенту.
 
-<img alt="algorithms" src="https://github.com/marcussss1/Telegram/blob/main/images/algorithms.jpg">
+<img alt="algorithms" src="https://github.com/marcussss1/Telegram/blob/main/images/algorithm_schema.jpg">
 
 ## 8. Технологии <a name="8"></a>
 
