@@ -224,11 +224,11 @@
 
 ## 5. Логическая схема БД <a name="5"></a>
 
-<img alt="database logic diagram" src="https://github.com/marcussss1/Telegram/blob/main/images/new2.jpg">
+<img alt="database logic diagram" src="https://github.com/marcussss1/Telegram/blob/main/images/121.jpg">
 
 ## 6. Физическая схема <a name="6"></a>
 
-<img alt="physical schema" src="https://github.com/marcussss1/Telegram/blob/main/images/new1.jpg">
+<img alt="physical schema" src="https://github.com/marcussss1/Telegram/blob/main/images/12.jpg">
 
 Для хранения основных данных(чатов, сообщений и профилей) используется база данных PostgreSQL, так как она является одной из наиболее функциональных, производительных и широко распространённых реляционных БД. Для обеспечения отказоустойчивости и повышения производительности базы на чтение, сделаем master-slave репликацию. Для повышения производительности базы на запись сделаем шардинг таблицы сообщений, чатов и профилей. Шардинг таблицы сообщений будем выполнять по полю id. Для более быстрого доступа к данным будет необходимо использовать индексы. Так как для поля id индексы в таблицах создадутся автоматически, навесим индекс на поле chat_id в таблице message.
 
