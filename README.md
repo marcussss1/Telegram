@@ -449,7 +449,7 @@ Message {
 
 ## 10. Схема проекта <a name="10"></a>
 
-<img alt="algorithms" src="https://github.com/marcussss1/Telegram/blob/main/images/service_schema.jpg">
+<img alt="algorithms" src="https://github.com/marcussss1/Telegram/blob/main/images/56.jpg">
 
 ## Список литературы
 [^1]: [Аудитория телеграма по миру](https://www.bankmycell.com/blog/number-of-telegram-users)
