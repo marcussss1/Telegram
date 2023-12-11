@@ -12,6 +12,7 @@
 * ### [Технологии](#8)
 * ### [Обеспечение надежности](#9)
 * ### [Схема проекта](#10)
+* ### [Расчет ресурсов ] (#11)
 
 ## 1. Тема и целевая аудитория <a name="1"></a>
 
@@ -451,6 +452,45 @@ Message {
 ## 10. Схема проекта <a name="10"></a>
 
 <img alt="algorithms" src="https://github.com/marcussss1/Telegram/blob/main/images/56.jpg">
+
+## 11. Расчет ресурсов <a name="11"></a>
+
+### Справочная информация
+
+| Технология | Характер сервиса      | RPS    | RAM    |
+|------------|-----------------------|--------|--------|
+| Go         | тяжелая бизнес-логика | 10     | 100 Mb |
+| Go         | средняя бизнес-логика | 100    | 100 Mb |
+| Go         | легкое JSON API       | 5000   | 10 Mb  |
+| Nginx      | SSL handshake (CPS)   | 500    | 10 Mb  |
+
+### Расчет ресурсов
+
+| Сервис             | Характер сервиса      | Целевая пиковая нагрузка, RPS    | CPU  | RAM     |
+|--------------------|-----------------------|----------------------------------|------|---------|
+| Users              | легкое JSON API       | 14 000                           | 28   | 28  Gb  |
+| Messages           | легкое JSON API       | 140 000                          | 280  | 280 Gb  |
+| Chats              | среднее JSON API      | 42 000                           | 420  | 420 Gb  |
+| Views              | легкое JSON API       | 14 000                           | 28   | 28  Gb  |
+| Auth               | легкое JSON API       | 150 000                          | 300  | 300 Gb  |
+| API-gateway        | легкое JSON API       | 160 000                          | 320  | 320 Gb  |
+| Centrifugo         | Шина данных           | 130 000 RPS, 80 000 000 ws conns | 3200 | 2160 Gb |
+| Redis              | In-memory             | 150 000 RPS                      | 250  | 240 Gb |
+| Tarantool          | In-memory             | 14 000 RPS                       | 30   | 25 Gb   |
+
+### Расчет ресурсов
+
+| Сервис | Хостинг | Конфигурация                       | Cores | Cnt     | 
+| ------ | ------- | ---------------------------------- | ----- | ------- | 
+| Users  | own     | 2x6430/4x8GB/1xNVMe256Gb/2x10Gb/s  | 4    | 4       | 
+| Messages   | own     | 2x6430/8x16GB/1xNVMe256Gb/2x10Gb/s  | 40    | 10       | 
+| Chats | own     | 2x6430/8x64GB/1xNVMe256Gb/2x10Gb/s  | 60    | 6       | 
+| Views | own     | 2x6430/2x1GB/1xNVMe256Gb/2x10Gb/s  | 8    | 4       | 
+| Auth | own     | 2x6430/2x1GB/1xNVMe256Gb/2x10Gb/s  | 128    | 10       | 
+| API-gateway | own     | 2x6430/4x8GB/1xNVMe256Gb/2x10Gb/s  | 128    | 12| 
+| Centrifugo | own     | 2x6430/4x8GB/1xNVMe256Gb/2x10Gb/s  | 256    | 6       | 
+| Redis | own     | 2x6430/4x8GB/1xNVMe256Gb/2x10Gb/s  | 128    | 6       | 
+| Tarantool | own     | 2x6430/4x8GB/1xNVMe256Gb/2x10Gb/s  | 4    | 3       | 
 
 ## Список литературы
 [^1]: [Аудитория телеграма по миру](https://www.bankmycell.com/blog/number-of-telegram-users)
