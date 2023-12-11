@@ -480,17 +480,17 @@ Message {
 
 ### Расчет ресурсов
 
-| Сервис | Хостинг | Конфигурация                       | Cores | Cnt     | 
-| ------ | ------- | ---------------------------------- | ----- | ------- | 
-| Users  | own     | 2x6430/4x8GB/1xNVMe256Gb/2x10Gb/s  | 4    | 4       | 
-| Messages   | own     | 2x6430/8x16GB/1xNVMe256Gb/2x10Gb/s  | 40    | 10       | 
-| Chats | own     | 2x6430/8x64GB/1xNVMe256Gb/2x10Gb/s  | 60    | 6       | 
-| Views | own     | 2x6430/2x1GB/1xNVMe256Gb/2x10Gb/s  | 8    | 4       | 
-| Auth | own     | 2x6430/2x1GB/1xNVMe256Gb/2x10Gb/s  | 128    | 10       | 
-| API-gateway | own     | 2x6430/4x8GB/1xNVMe256Gb/2x10Gb/s  | 128    | 12| 
-| Centrifugo | own     | 2x6430/4x8GB/1xNVMe256Gb/2x10Gb/s  | 256    | 6       | 
-| Redis | own     | 2x6430/4x8GB/1xNVMe256Gb/2x10Gb/s  | 128    | 6       | 
-| Tarantool | own     | 2x6430/4x8GB/1xNVMe256Gb/2x10Gb/s  | 4    | 3       | 
+| Сервис       | Хостинг | Конфигурация                        | Cores  | Cnt   | 
+| ------------ | ------- | ----------------------------------  | ------ | ----- | 
+| Users        | own     | 2x6430/4x8GB/1xNVMe256Gb/2x10Gb/s   | 2      | 4   | 
+| Messages     | own     | 2x6430/8x16GB/1xNVMe256Gb/2x10Gb/s  | 18   | 36    | 
+| Chats        | own     | 2x6430/8x64GB/1xNVMe256Gb/2x10Gb/s  | 28  | 54  | 
+| Views        | own     | 2x6430/2x1GB/1xNVMe256Gb/2x10Gb/s   | 2   | 4   | 
+| Auth         | own     | 2x6430/2x1GB/1xNVMe256Gb/2x10Gb/s   | 10  | 38  | 
+| API-gateway  | own     | 2x6430/4x8GB/1xNVMe256Gb/2x10Gb/s   | 20     | 40    | 
+| Centrifugo   | own     | 2x6430/4x8GB/1xNVMe256Gb/2x10Gb/s   | 200    | 270   | 
+| Redis        | own     | 2x6430/4x8GB/1xNVMe256Gb/2x10Gb/s   | 18 | 30    | 
+| Tarantool    | own     | 2x6430/4x8GB/1xNVMe256Gb/2x10Gb/s   | 2  | 4 |
 
 ## Список литературы
 [^1]: [Аудитория телеграма по миру](https://www.bankmycell.com/blog/number-of-telegram-users)
