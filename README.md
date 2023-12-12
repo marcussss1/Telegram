@@ -194,7 +194,7 @@
 
 ### Регионы, имеющие наибольшее количество клиентов
 
-<img alt="global_load_balancing" src="https://github.com/marcussss1/Telegram/blob/main/images/global_load_balancing.jpeg">
+<img alt="global_load_balancing" src="https://github.com/marcussss1/Telegram/blob/main/images/global_load_balancing.jpg">
 
 Исходя из изображения и статистики по странам лидерам, ДЦ расположим следующим образом:
 - Северная Америка: 1 ДЦ + 1 резервный
